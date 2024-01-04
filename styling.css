@@ -1,0 +1,142 @@
+/*styling.css*/
+html{
+    height: 100%;
+}
+
+#container{
+    height: 600px;
+    width: 750px;
+    background-color: #12ba42;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #0c5602;
+    position: relative;
+}
+
+#score{
+    background-color: #F1FF92;
+    color: #111207;
+    padding: 11px;
+    position: absolute;
+    left: 600px;
+    box-shadow: 4px 4px 4px #e3fb47;
+}
+
+#correct{
+    position: absolute;
+    left: 260px;
+    background-color: #030632;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 250px;
+    background-color: #de401a;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#fruitsContainer{
+    width: 650px;
+    height: 400px;
+    margin: 50px auto 10px auto;
+    background-color: white;
+    box-shadow: 0px 4px #535aa8;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+#instruction{
+    width: 450px;
+    height: 50px;
+    background-color: #B481D9;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 4px #8153a8;
+}
+
+#choices{
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:active, #startreset:active{
+    background-color: #1b0c66;
+    color: white;
+    box-shadow: 0px 0px #6b54d3; 
+    top: 4px;
+}
+
+#startreset{
+    width: 78px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 auto;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+
+#trialsLeft{
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    background-color: #F1FF92;
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px #e3fb47;
+    display: none;
+}
+
+#gameOver{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#F3CA6B, #F3706C);
+    background: -webkit-linear-gradient(#F3CA6B, #F3706C);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 145px;
+    z-index: 2;
+    display: none;
+    
+}
+
+.fruit{
+    display: none;
+    position: absolute;
+}
